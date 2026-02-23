@@ -2,9 +2,13 @@
 <form>
   <label for="additions">Non-profit organizations to add:</label><br>
   <input type="text" id="additions" name="additions"><br>
-  <input type="submit" value="Submit">
-<form action="action_page.php">
-<input type="submit" value="Submit Survey">
+<form action="Page.php" method="GET">
+  <input type="submit" value="Submit Survey" name='getlol'>
+</form>
+<?php
+$_get['getlol'];
+echo "You submitted the survey!";
+?>
 </form>
   <body>
      <h1>Casa de Peregrinos</h1>
